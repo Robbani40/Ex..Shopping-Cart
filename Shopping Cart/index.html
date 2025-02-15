@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> Online Shopping </h1>
+    <div class="products">
+        <div class="product">
+            <img src="Cookise.jpg" alt="Product 1">          
+            <p> Cookise of the Product </p>
+            <p>$100.00</p>
+            <button onclick="addToCart('Product 1', 100)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Drycake.webp" alt="Product 2">
+            <p> Strawberry Drycake </p>
+            <p>$ 250.00</p>
+            <button onclick="addToCart('Product 2', 250)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="KitKat.avif" alt="Product 3">           
+            <p> Pinata Kitkat</p>
+            <p>$ 500.00</p>
+            <button onclick="addToCart('Product 3', 500)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="DaityMilk.jpg" alt="Product 4">           
+            <p>  Victoria  Dairy Milk </p>
+            <p> $ 950.00</p>
+            <button onclick="addToCart('Product 4', 950)">Add to Cart</button>
+        </div><
+    </div>
+
+    <h2>Cart</h2>
+    <ul id="cart-list"></ul>
+    <p>Total: $ <span id="total">0.00</span></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
